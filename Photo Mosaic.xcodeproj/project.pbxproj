@@ -1,0 +1,546 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0604AD1D4C0EAD007FC034 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604AC1D4C0EAD007FC034 /* main.m */; };
+		FB0604B01D4C0EAD007FC034 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604AF1D4C0EAD007FC034 /* AppDelegate.m */; };
+		FB0604B31D4C0EAD007FC034 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604B21D4C0EAD007FC034 /* MainViewController.m */; };
+		FB0604B61D4C0EAD007FC034 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0604B41D4C0EAD007FC034 /* Main.storyboard */; };
+		FB0604B81D4C0EAD007FC034 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0604B71D4C0EAD007FC034 /* Assets.xcassets */; };
+		FB0604BB1D4C0EAD007FC034 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB0604B91D4C0EAD007FC034 /* LaunchScreen.storyboard */; };
+		FB0604C61D4C0EAD007FC034 /* Photo_MosaicTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604C51D4C0EAD007FC034 /* Photo_MosaicTests.m */; };
+		FB0604D31D4C2049007FC034 /* UIImage+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604D21D4C2049007FC034 /* UIImage+Additions.m */; };
+		FB0604D71D4C2427007FC034 /* TileView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604D61D4C2427007FC034 /* TileView.m */; };
+		FB0604DB1D4C2EB7007FC034 /* UIView+HelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604DA1D4C2EB7007FC034 /* UIView+HelperMethods.m */; };
+		FB0604DF1D4C6AA0007FC034 /* ServicesAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = FB0604DE1D4C6AA0007FC034 /* ServicesAPI.m */; };
+		FB0604EE1D4D87B1007FC034 /* TakeHomeTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0604ED1D4D87B1007FC034 /* TakeHomeTask.framework */; };
+		FB0604EF1D4D87B1007FC034 /* TakeHomeTask.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FB0604ED1D4D87B1007FC034 /* TakeHomeTask.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FB6DEDF71D4DB25B009A767C /* SettingsPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6DEDF51D4DB25B009A767C /* SettingsPopoverViewController.m */; };
+		FB6DEDFB1D4DD217009A767C /* AsynchronousBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6DEDFA1D4DD217009A767C /* AsynchronousBlockOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB0604C21D4C0EAD007FC034 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB0604A01D4C0EAD007FC034 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB0604A71D4C0EAD007FC034;
+			remoteInfo = "Photo Mosaic";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FB0604F01D4D87B1007FC034 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FB0604EF1D4D87B1007FC034 /* TakeHomeTask.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F8150E7058EE38B69809F69 /* libPods-PhotoMosaic.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PhotoMosaic.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F2B79A115894FFBC72A970A /* Pods-PhotoMosaic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMosaic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMosaic/Pods-PhotoMosaic.debug.xcconfig"; sourceTree = "<group>"; };
+		7C9A335B00077AE61E62E258 /* Pods-PhotoMosaic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMosaic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMosaic/Pods-PhotoMosaic.release.xcconfig"; sourceTree = "<group>"; };
+		FB0604A81D4C0EAD007FC034 /* Photo Mosaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Photo Mosaic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0604AC1D4C0EAD007FC034 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB0604AE1D4C0EAD007FC034 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FB0604AF1D4C0EAD007FC034 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FB0604B11D4C0EAD007FC034 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		FB0604B21D4C0EAD007FC034 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		FB0604B51D4C0EAD007FC034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB0604B71D4C0EAD007FC034 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB0604BA1D4C0EAD007FC034 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB0604BC1D4C0EAD007FC034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0604C11D4C0EAD007FC034 /* Photo Mosaic.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Photo Mosaic.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0604C51D4C0EAD007FC034 /* Photo_MosaicTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Photo_MosaicTests.m; sourceTree = "<group>"; };
+		FB0604C71D4C0EAD007FC034 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB0604D11D4C2049007FC034 /* UIImage+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Additions.h"; sourceTree = "<group>"; };
+		FB0604D21D4C2049007FC034 /* UIImage+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Additions.m"; sourceTree = "<group>"; };
+		FB0604D51D4C2427007FC034 /* TileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TileView.h; sourceTree = "<group>"; };
+		FB0604D61D4C2427007FC034 /* TileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TileView.m; sourceTree = "<group>"; };
+		FB0604D91D4C2EB7007FC034 /* UIView+HelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+HelperMethods.h"; sourceTree = "<group>"; };
+		FB0604DA1D4C2EB7007FC034 /* UIView+HelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+HelperMethods.m"; sourceTree = "<group>"; };
+		FB0604DD1D4C6AA0007FC034 /* ServicesAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesAPI.h; sourceTree = "<group>"; };
+		FB0604DE1D4C6AA0007FC034 /* ServicesAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesAPI.m; sourceTree = "<group>"; };
+		FB0604ED1D4D87B1007FC034 /* TakeHomeTask.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TakeHomeTask.framework; path = "Photo Mosaic/Framework/TakeHomeTask.framework"; sourceTree = "<group>"; };
+		FB6DEDF41D4DB25B009A767C /* SettingsPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsPopoverViewController.h; sourceTree = "<group>"; };
+		FB6DEDF51D4DB25B009A767C /* SettingsPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsPopoverViewController.m; sourceTree = "<group>"; };
+		FB6DEDF91D4DD217009A767C /* AsynchronousBlockOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchronousBlockOperation.h; sourceTree = "<group>"; };
+		FB6DEDFA1D4DD217009A767C /* AsynchronousBlockOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchronousBlockOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB0604A51D4C0EAD007FC034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0604EE1D4D87B1007FC034 /* TakeHomeTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0604BE1D4C0EAD007FC034 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		33BB6313EDBBB022C3348384 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604ED1D4D87B1007FC034 /* TakeHomeTask.framework */,
+				0F8150E7058EE38B69809F69 /* libPods-PhotoMosaic.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		87E8927B7B4E5CA73342E9D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F2B79A115894FFBC72A970A /* Pods-PhotoMosaic.debug.xcconfig */,
+				7C9A335B00077AE61E62E258 /* Pods-PhotoMosaic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB06049F1D4C0EAD007FC034 = {
+			isa = PBXGroup;
+			children = (
+				FB0604AA1D4C0EAD007FC034 /* Photo Mosaic */,
+				FB0604C41D4C0EAD007FC034 /* Photo MosaicTests */,
+				FB0604A91D4C0EAD007FC034 /* Products */,
+				33BB6313EDBBB022C3348384 /* Frameworks */,
+				87E8927B7B4E5CA73342E9D1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		FB0604A91D4C0EAD007FC034 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604A81D4C0EAD007FC034 /* Photo Mosaic.app */,
+				FB0604C11D4C0EAD007FC034 /* Photo Mosaic.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB0604AA1D4C0EAD007FC034 /* Photo Mosaic */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604AE1D4C0EAD007FC034 /* AppDelegate.h */,
+				FB0604AF1D4C0EAD007FC034 /* AppDelegate.m */,
+				FB0604DC1D4C6A48007FC034 /* Singletons */,
+				FB0604D81D4C2572007FC034 /* ViewControllers */,
+				FB0604D41D4C23E8007FC034 /* Views */,
+				FB6DEDFC1D4DD94A009A767C /* Utility */,
+				FB0604D01D4C1FE9007FC034 /* Categories */,
+				FB0604B41D4C0EAD007FC034 /* Main.storyboard */,
+				FB0604B71D4C0EAD007FC034 /* Assets.xcassets */,
+				FB0604B91D4C0EAD007FC034 /* LaunchScreen.storyboard */,
+				FB0604BC1D4C0EAD007FC034 /* Info.plist */,
+				FB0604AB1D4C0EAD007FC034 /* Supporting Files */,
+			);
+			path = "Photo Mosaic";
+			sourceTree = "<group>";
+		};
+		FB0604AB1D4C0EAD007FC034 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604AC1D4C0EAD007FC034 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FB0604C41D4C0EAD007FC034 /* Photo MosaicTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604C51D4C0EAD007FC034 /* Photo_MosaicTests.m */,
+				FB0604C71D4C0EAD007FC034 /* Info.plist */,
+			);
+			path = "Photo MosaicTests";
+			sourceTree = "<group>";
+		};
+		FB0604D01D4C1FE9007FC034 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604D11D4C2049007FC034 /* UIImage+Additions.h */,
+				FB0604D21D4C2049007FC034 /* UIImage+Additions.m */,
+				FB0604D91D4C2EB7007FC034 /* UIView+HelperMethods.h */,
+				FB0604DA1D4C2EB7007FC034 /* UIView+HelperMethods.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		FB0604D41D4C23E8007FC034 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604D51D4C2427007FC034 /* TileView.h */,
+				FB0604D61D4C2427007FC034 /* TileView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FB0604D81D4C2572007FC034 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604B11D4C0EAD007FC034 /* MainViewController.h */,
+				FB0604B21D4C0EAD007FC034 /* MainViewController.m */,
+				FB6DEDF41D4DB25B009A767C /* SettingsPopoverViewController.h */,
+				FB6DEDF51D4DB25B009A767C /* SettingsPopoverViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB0604DC1D4C6A48007FC034 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				FB0604DD1D4C6AA0007FC034 /* ServicesAPI.h */,
+				FB0604DE1D4C6AA0007FC034 /* ServicesAPI.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		FB6DEDFC1D4DD94A009A767C /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FB6DEDF91D4DD217009A767C /* AsynchronousBlockOperation.h */,
+				FB6DEDFA1D4DD217009A767C /* AsynchronousBlockOperation.m */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB0604A71D4C0EAD007FC034 /* Photo Mosaic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0604CA1D4C0EAD007FC034 /* Build configuration list for PBXNativeTarget "Photo Mosaic" */;
+			buildPhases = (
+				FB0604A41D4C0EAD007FC034 /* Sources */,
+				FB0604A51D4C0EAD007FC034 /* Frameworks */,
+				FB0604A61D4C0EAD007FC034 /* Resources */,
+				FB0604F01D4D87B1007FC034 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Photo Mosaic";
+			productName = "Photo Mosaic";
+			productReference = FB0604A81D4C0EAD007FC034 /* Photo Mosaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB0604C01D4C0EAD007FC034 /* Photo MosaicTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB0604CD1D4C0EAD007FC034 /* Build configuration list for PBXNativeTarget "Photo MosaicTests" */;
+			buildPhases = (
+				FB0604BD1D4C0EAD007FC034 /* Sources */,
+				FB0604BE1D4C0EAD007FC034 /* Frameworks */,
+				FB0604BF1D4C0EAD007FC034 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB0604C31D4C0EAD007FC034 /* PBXTargetDependency */,
+			);
+			name = "Photo MosaicTests";
+			productName = "Photo MosaicTests";
+			productReference = FB0604C11D4C0EAD007FC034 /* Photo Mosaic.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB0604A01D4C0EAD007FC034 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Allan Poole";
+				TargetAttributes = {
+					FB0604A71D4C0EAD007FC034 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 67GWCPUV8B;
+					};
+					FB0604C01D4C0EAD007FC034 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = FB0604A71D4C0EAD007FC034;
+					};
+				};
+			};
+			buildConfigurationList = FB0604A31D4C0EAD007FC034 /* Build configuration list for PBXProject "Photo Mosaic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB06049F1D4C0EAD007FC034;
+			productRefGroup = FB0604A91D4C0EAD007FC034 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB0604A71D4C0EAD007FC034 /* Photo Mosaic */,
+				FB0604C01D4C0EAD007FC034 /* Photo MosaicTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB0604A61D4C0EAD007FC034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0604BB1D4C0EAD007FC034 /* LaunchScreen.storyboard in Resources */,
+				FB0604B81D4C0EAD007FC034 /* Assets.xcassets in Resources */,
+				FB0604B61D4C0EAD007FC034 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0604BF1D4C0EAD007FC034 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB0604A41D4C0EAD007FC034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0604B31D4C0EAD007FC034 /* MainViewController.m in Sources */,
+				FB0604D31D4C2049007FC034 /* UIImage+Additions.m in Sources */,
+				FB0604D71D4C2427007FC034 /* TileView.m in Sources */,
+				FB0604DF1D4C6AA0007FC034 /* ServicesAPI.m in Sources */,
+				FB6DEDFB1D4DD217009A767C /* AsynchronousBlockOperation.m in Sources */,
+				FB0604DB1D4C2EB7007FC034 /* UIView+HelperMethods.m in Sources */,
+				FB6DEDF71D4DB25B009A767C /* SettingsPopoverViewController.m in Sources */,
+				FB0604B01D4C0EAD007FC034 /* AppDelegate.m in Sources */,
+				FB0604AD1D4C0EAD007FC034 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB0604BD1D4C0EAD007FC034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0604C61D4C0EAD007FC034 /* Photo_MosaicTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB0604C31D4C0EAD007FC034 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB0604A71D4C0EAD007FC034 /* Photo Mosaic */;
+			targetProxy = FB0604C21D4C0EAD007FC034 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB0604B41D4C0EAD007FC034 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0604B51D4C0EAD007FC034 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB0604B91D4C0EAD007FC034 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB0604BA1D4C0EAD007FC034 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB0604C81D4C0EAD007FC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB0604C91D4C0EAD007FC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB0604CB1D4C0EAD007FC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = "Photo Mosaic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "allanpoole.Photo-Mosaic";
+				PRODUCT_NAME = "Photo Mosaic";
+			};
+			name = Debug;
+		};
+		FB0604CC1D4C0EAD007FC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/**";
+				INFOPLIST_FILE = "Photo Mosaic/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "allanpoole.Photo-Mosaic";
+				PRODUCT_NAME = "Photo Mosaic";
+			};
+			name = Release;
+		};
+		FB0604CE1D4C0EAD007FC034 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Photo MosaicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "allanpoole.Photo-MosaicTests";
+				PRODUCT_NAME = "Photo Mosaic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Mosaic.app/Photo Mosaic";
+			};
+			name = Debug;
+		};
+		FB0604CF1D4C0EAD007FC034 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Photo MosaicTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "allanpoole.Photo-MosaicTests";
+				PRODUCT_NAME = "Photo Mosaic";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Photo Mosaic.app/Photo Mosaic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB0604A31D4C0EAD007FC034 /* Build configuration list for PBXProject "Photo Mosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0604C81D4C0EAD007FC034 /* Debug */,
+				FB0604C91D4C0EAD007FC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0604CA1D4C0EAD007FC034 /* Build configuration list for PBXNativeTarget "Photo Mosaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0604CB1D4C0EAD007FC034 /* Debug */,
+				FB0604CC1D4C0EAD007FC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB0604CD1D4C0EAD007FC034 /* Build configuration list for PBXNativeTarget "Photo MosaicTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB0604CE1D4C0EAD007FC034 /* Debug */,
+				FB0604CF1D4C0EAD007FC034 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB0604A01D4C0EAD007FC034 /* Project object */;
+}
